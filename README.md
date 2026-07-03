@@ -247,14 +247,18 @@ pip install -r requirements.txt
 
 ## Screenshots
 
-### CLI
+### Market Order
 
-> Add your CLI screenshots here.
+![Market Order](screenshots/market_order.png)
+
 ---
-screenshots/
-    market_order.png
-    limit_order.png
+
+### Limit Order
+
+![Limit Order](screenshots/limit_order.png)
+
 ---
+
 
 ## License
 
