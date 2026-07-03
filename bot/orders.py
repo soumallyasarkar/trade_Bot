@@ -105,10 +105,37 @@ class OrderManager:
         symbol: str,
         order_id: int,
     ) -> Dict[str, Any]:
-        """
-        Get the latest status of an order.
-        """
+        
+        # Get the latest status of an order.
         return client.futures_get_order(
             symbol=symbol,
             orderId=order_id,
+        )
+    
+    @staticmethod
+    def get_position(symbol: str):
+        positions = client.futures_position_information(symbol=symbol)
+
+        for position in positions:
+            if float(position["positionAmt"]) != 0:
+                return position
+
+        return None
+    
+
+    @staticmethod
+    def get_wallet_balance():
+        return client.futures_account_balance()
+    
+    @staticmethod
+    def cancel_order(symbol: str, order_id: int):
+        return client.futures_cancel_order(
+            symbol=symbol,
+            orderId=order_id,
+        )
+    
+    @staticmethod
+    def get_open_orders(symbol: str):
+        return client.futures_get_open_orders(
+            symbol=symbol,
         )

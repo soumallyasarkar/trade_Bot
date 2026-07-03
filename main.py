@@ -51,7 +51,7 @@ def main():
                 price,
             )
 
-        print(Fore.GREEN + "✓ Order placed successfully!\n")
+        print(Fore.GREEN + "Order placed successfully!\n")
 
         print(f"Order ID       : {response['orderId']}")
         print(f"Status         : {response['status']}")
