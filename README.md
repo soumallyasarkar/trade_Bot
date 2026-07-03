@@ -249,13 +249,13 @@ pip install -r requirements.txt
 
 ### Market Order
 
-![Market Order](screenshots/market_order.png)
+![Market Order](Screenshots/market_order.png)
 
 ---
 
 ### Limit Order
 
-![Limit Order](screenshots/limit_order.png)
+![Limit Order](Screenshots/limit_order.png)
 
 ---
 
