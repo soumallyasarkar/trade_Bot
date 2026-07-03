@@ -5,8 +5,8 @@ This module creates and returns a configured Binance client
 for interacting with the Binance Futures Testnet.
 """
 
-from binance.client import Client
-from binance.exceptions import BinanceAPIException
+from binance.client import Client  # type: ignore
+from binance.exceptions import BinanceAPIException # type: ignore
 
 from bot.config import API_KEY, API_SECRET, TESTNET_URL
 from bot.logger import logger

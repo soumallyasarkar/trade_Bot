@@ -3,7 +3,7 @@ Order management for Binance Futures Testnet.
 """
 
 from typing import Any, Dict
-from binance.exceptions import BinanceAPIException
+from binance.exceptions import BinanceAPIException # type: ignore
 from bot.client import BinanceClient
 from bot.logger import logger
 import time
